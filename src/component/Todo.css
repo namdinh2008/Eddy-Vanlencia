@@ -1,0 +1,141 @@
+* {
+  color: white;
+}
+.contai {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* Full viewport height */
+  background-color: black;
+}
+.container {
+  background: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.progress {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: greenyellow;
+  color: black;
+  border: solid 1px greenyellow;
+  text-align: center;
+  font-size: large;
+  margin-bottom: 20px;
+}
+.progress-text {
+  padding-top: 40%;
+  color: black;
+}
+.header-todo {
+  display: flex;
+  justify-content: space-around;
+}
+.header-item {
+  position: relative;
+  bottom: 20px;
+}
+.header-main {
+  padding-top: 20px;
+}
+
+.todo-input {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #444;
+  color: #e6e6e6;
+}
+
+.todo-input button {
+  background: #28a745;
+  border: none;
+  padding: 10px;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: #fff;
+  margin-left: 5px;
+}
+
+.todo-input button:hover {
+  background: #218838;
+}
+
+.tasks .task {
+  display: flex;
+  align-items: center;
+  background: #444;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.tasks .task.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.tasks .task .task-name {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.tasks .task button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #e6e6e6;
+}
+
+.tasks .task button:hover {
+  color: #fff;
+}
+.tasks .task input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #e6e6e6;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  margin-right: 10px;
+  position: relative;
+}
+
+.tasks .task input[type="checkbox"]:checked {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.tasks .task input[type="checkbox"]:checked::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.edit {
+  position: relative;
+  right: 10px;
+}
