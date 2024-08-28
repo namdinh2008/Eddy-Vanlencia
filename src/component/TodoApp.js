@@ -48,7 +48,7 @@ function TodoApp() {
       <div className="header-todo">
         <div className="header-main">
           <h1>Task Done</h1>
-          <p className="header-item">Keep it up</p>
+          <p className="header-item">Keep it up !</p>
         </div>
         <div className="progress">
           <div id="progress-text" className="progress-text">{completedTasks}/{tasks.length}</div>
